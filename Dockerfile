@@ -10,8 +10,6 @@ RUN   cd /xmrig && \
       cmake -DCMAKE_BUILD_TYPE=Release . && \
       make
 
-RUN ls -l /xmrig
-
 FROM  alpine:latest
 RUN   apk add --no-cache libuv \
       libmicrohttpd && \
